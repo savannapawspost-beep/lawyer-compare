@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+  <meta charset="UTF-8">
+  <title>香港律師比較平台</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>香港律師比較平台</h1>
+    <p>比較律師的勝訴率與收費，幫你選擇最合適的法律代表</p>
+  </header>
+
+  <section id="search">
+    <input type="text" id="searchName" placeholder="輸入律師姓名">
+    <input type="text" id="searchFirm" placeholder="輸入律所名稱">
+    <button onclick="searchLawyers()">搜尋</button>
+  </section>
+
+  <section id="filters">
+    <button onclick="sortByWinRate()">按勝訴率排序</button>
+    <button onclick="sortByFee()">按收費排序</button>
+  </section>
+
+  <section id="lawyerList">
+    <!-- 律師卡片將由 JavaScript 動態生成 -->
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
